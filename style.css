@@ -15,6 +15,25 @@ body {
     user-select: none;
 }
 
+.title {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    text-align: center;
+    color: white;
+    font-size: 6vw; /* Adjust font size based on viewport width */
+}
+
+.subtitle {
+    position: absolute;
+    width: 100%;
+    top: 16%;
+    text-align: center;
+    color: white;
+    font-size: 3.5vw; /* Adjust font size based on viewport width */
+}
+
+
 .slider {
     position: relative;
     width: 100%;
@@ -36,7 +55,7 @@ body {
     /*transform-style: preserve-3d; Ensure 3D transformations */
     perspective: 1000px; /* Perspective for 3D effect */
 }
-
+ 
 
 #next, #prev {
     position: absolute;
@@ -86,3 +105,16 @@ body {
 }
 
 
+@media screen and (max-height: 800px){
+    .title {
+        font-size: 3vw; /* Adjust font size based on viewport width */
+        top: 5%;
+    }
+    
+    .subtitle {
+        top: 10%;
+        padding-top: 10px;
+        font-size: 2vw; /* Adjust font size based on viewport width */
+    }
+    
+}
